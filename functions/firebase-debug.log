@@ -1,0 +1,52 @@
+[debug] [2021-03-11T14:53:07.565Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T14:53:07.567Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aksha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-03-11T14:53:07.568Z] CLI Version:   9.5.0
+[debug] [2021-03-11T14:53:07.568Z] Platform:      win32
+[debug] [2021-03-11T14:53:07.568Z] Node Version:  v14.16.0
+[debug] [2021-03-11T14:53:07.569Z] Time:          Thu Mar 11 2021 20:23:07 GMT+0530 (India Standard Time)
+[debug] [2021-03-11T14:53:07.569Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T14:53:07.570Z] 
+[debug] [2021-03-11T14:53:07.578Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-11T14:53:07.578Z] > authorizing via signed-in user
+[debug] [2021-03-11T14:53:07.579Z] [iam] checking project cybermate-app for permissions ["firebase.projects.get"]
+[debug] [2021-03-11T14:53:07.581Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cybermate-app:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-03-11T14:53:09.373Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 11 Mar 2021 14:53:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1327","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "12" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"14\""}}
+[debug] [2021-03-11T14:53:09.389Z] defaultcredentials: writing to file C:\Users\Aksha\AppData\Roaming\firebase\akshadkolhatkar_gmail_com_application_default_credentials.json
+[debug] [2021-03-11T14:53:09.391Z] DEBUG: Setting GAC to C:\Users\Aksha\AppData\Roaming\firebase\akshadkolhatkar_gmail_com_application_default_credentials.json
+[debug] [2021-03-11T14:53:09.393Z] > refreshing access token with scopes: []
+[debug] [2021-03-11T14:53:09.394Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-11T14:53:09.903Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 11 Mar 2021 14:53:10 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-11T14:53:09.937Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cybermate-app/adminSdkConfig [none]
+[debug] [2021-03-11T14:53:10.877Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cybermate-app/adminSdkConfig 200
+[debug] [2021-03-11T14:53:10.878Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cybermate-app/adminSdkConfig {"projectId":"cybermate-app","storageBucket":"cybermate-app.appspot.com","locationId":"us-central"}
+[debug] [2021-03-11T14:53:10.988Z] [functions] Watching "C:\Users\Aksha\OneDrive\Desktop\Cybermate React App\cybermate\functions" for Cloud Functions...
+[debug] [2021-03-11T14:53:11.002Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-03-11T14:53:11.002Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-03-11T14:53:11.003Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-03-11T14:53:11.003Z] DEBUG: [worker-~diagnostic~-2db34c2f-760b-480e-a6d0-99da18508497]: Assigning socketPath: \\?\pipe\C:\Users\Aksha\OneDrive\Desktop\Cybermate React App\cybermate\functions\24048
+[debug] [2021-03-11T14:53:11.003Z] DEBUG: [worker-~diagnostic~-2db34c2f-760b-480e-a6d0-99da18508497]: BUSY
+[debug] [2021-03-11T14:53:11.241Z] DEBUG: [runtime-status] [24048] Functions runtime initialized. {"cwd":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions","node_version":"14.16.0"}
+[debug] [2021-03-11T14:53:11.242Z] DEBUG: [runtime-status] [24048] Disabled runtime features: undefined
+[debug] [2021-03-11T14:53:11.246Z] DEBUG: [runtime-status] [24048] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.248Z] DEBUG: [runtime-status] [24048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.250Z] DEBUG: [runtime-status] [24048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.252Z] DEBUG: [runtime-status] [24048] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-03-11T14:53:11.252Z] DEBUG: [runtime-status] [24048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.306Z] DEBUG: [runtime-status] [24048] Checked functions.config() {"config":{}}
+[debug] [2021-03-11T14:53:11.307Z] DEBUG: [runtime-status] [24048] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-03-11T14:53:11.308Z] DEBUG: [runtime-status] [24048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.309Z] DEBUG: [runtime-status] [24048] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.310Z] DEBUG: [runtime-status] [24048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-03-11T14:53:11.310Z] DEBUG: [runtime-status] [24048] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\Aksha\\OneDrive\\Desktop\\Cybermate React App\\cybermate\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-03-11T14:53:11.318Z] DEBUG: [runtime-status] [24048] initializeApp(DEFAULT) {"storageBucket":"cybermate-app.appspot.com","projectId":"cybermate-app"}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2021-03-11T14:53:11.656Z] [functions[detectEvilUsers]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: detectEvilUsers 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2021-03-11T14:53:11.666Z] DEBUG: [worker-~diagnostic~-2db34c2f-760b-480e-a6d0-99da18508497]: IDLE
+[debug] [2021-03-11T14:53:13.181Z] [functions] Stopping Functions Emulator
+[debug] [2021-03-11T14:53:13.191Z] DEBUG: [worker-~diagnostic~-2db34c2f-760b-480e-a6d0-99da18508497]: exited
+[debug] [2021-03-11T14:53:13.191Z] DEBUG: [worker-~diagnostic~-2db34c2f-760b-480e-a6d0-99da18508497]: FINISHED
